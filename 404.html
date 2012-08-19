@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title> 请使用 liubinan.net 访问本站 </title>
+    <script type="text/javascript"> 
+        var wait_seconds = 10;
+        
+        function delayer() 
+        {
+            if (wait_seconds > 0)
+            {
+                wait_seconds--;
+                showtime.innerHTML = wait_seconds;
+                setTimeout('delayer()', 1000);
+            }
+            else
+            {
+                window.location = "http://www.liubinan.net"
+            }
+        } 
+    </script>
+  </head>
+
+  <body onLoad="showtime.innerText = wait_seconds;setTimeout('delayer()', 1000)">
+		<div id="container" style="position:relative;">
+      <div id="header">
+        <h1> 自动转向 <a href="http://www.liubinan.net">www.liubinan.net</a> </h1>
+      </div>
+
+      <div id="main-content">
+        <p>
+            由于无法绑定多个域名，
+            因此无法使用 liubinan.com 访问本站，
+            <span id=showtime style="font-size:30px;color:red"></span>秒后自动重定向到 
+            <a href="http://www.liubinan.net">www.liubinan.net</a> ...
+        </p>
+      </div>
+
+      <div id="footer"><p>&nbsp;</p></div>
+    </div>
+  </body>
+</html>

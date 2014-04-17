@@ -1,0 +1,9 @@
+﻿pygments:     true
+markdown:     rdiscount
+permalink:    /posts/:year-:month-:day-:title.html
+title:        LiuBiNan
+description:  LiuBiNan的个人站点,记录心情与知识。
+keywords:     LiuBiNan,刘碧楠,个人站点,博客,心情,知识,编程
+author:       LiuBiNan
+email:        liubinan@liubinan.net
+github:       http://github.com/liubinan
